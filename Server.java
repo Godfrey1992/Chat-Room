@@ -89,8 +89,8 @@ public class Server extends JFrame implements Runnable{
 		// define a set port button and add an actionListerner
 		setPort = new JButton("Set Port");
 		contentPane.add(setPort);
-		setPort.addActionListener(new ActionListener()
-        {
+		setPort.addActionListener(l -> {
+
             public void actionPerformed(ActionEvent e)
             {
                 setPort(); //execute setPort method on button press

@@ -51,20 +51,18 @@ public class ChatClient extends JFrame implements Runnable
 		//The user has a choice of pressing the enter key on their keyboard or pressing the send button.
 		textField = new JTextField();
 		textField.setFont(font);
-		textField.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
+		textField.addActionListener(l -> {
 
-				try {
-					TBMESSAGE = textField.getText(); //Save message in a variable.
-					textField.setText(""); //Clear the text field.
-					textField.requestFocus();
-					sendMessage.println(NAME + ": " + TBMESSAGE); //Send to server
+                    try {
+                        TBMESSAGE = textField.getText(); //Save message in a variable.
+                        textField.setText(""); //Clear the text field.
+                        textField.requestFocus();
+                        sendMessage.println(NAME + ": " + TBMESSAGE); //Send to server
 
-				} catch (Exception g) {
-					textArea.append("You must be connected to a server \n");
-				}
-			}
-		});
+                    } catch (Exception g) {
+                        textArea.append("You must be connected to a server \n");
+                    }
+                });
 		
 		//Button and actionListener for the send button.
 		//This does the same thing as the method above, when the user presses the send button instead.
@@ -122,11 +120,10 @@ public class ChatClient extends JFrame implements Runnable
 		//Create a new button called Connect To server.
 		//Add an action Listener to the button.
 		connectButton = new JButton("Connect To Server");
-		connectButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
+		connectButton.addActionListener(l -> {
 				
 				setInfo(); //Execute setInto method
-			}
+
 		});
 
 		//adds the elements to a windowN container

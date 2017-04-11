@@ -14,6 +14,7 @@ import javax.swing.*;
 
 public class Server extends JFrame implements Runnable{
 
+	// MADE CHANGE on TEST BRACH
 	// ADDED SOME MORE COMMENETS
 	public static JFrame frame;
 	public static JLabel portLabel;
@@ -89,8 +90,8 @@ public class Server extends JFrame implements Runnable{
 		// define a set port button and add an actionListerner
 		setPort = new JButton("Set Port");
 		contentPane.add(setPort);
-		setPort.addActionListener(new ActionListener()
-        {
+		setPort.addActionListener(l -> {
+
             public void actionPerformed(ActionEvent e)
             {
                 setPort(); //execute setPort method on button press

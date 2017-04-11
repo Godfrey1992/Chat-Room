@@ -20,6 +20,7 @@ import javax.swing.JTextField;
 public class ChatClient extends JFrame implements Runnable
 {
 
+    // Made some more checges on new patch
     // MADE CHANGE on TEST BRACH
 	JTextField textField;
 	Socket socket;
@@ -70,8 +71,8 @@ public class ChatClient extends JFrame implements Runnable
 		//This does the same thing as the method above, when the user presses the send button instead.
 		JButton sendButton = new JButton("SEND");
 		sendButton.setFont(font);
-		sendButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
+		sendButton.addActionListener(l -> {
+
 
 				try {
 					TBMESSAGE = textField.getText();
@@ -82,7 +83,7 @@ public class ChatClient extends JFrame implements Runnable
 				} catch (Exception g) {
 					textArea.append("You must be connected to a server \n");
 				}
-			}
+
 		});
 		
 		//Create a new container and add the textField and button which we made above.

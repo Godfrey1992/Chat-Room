@@ -5,6 +5,7 @@ import java.net.Socket;
 import java.util.Scanner;
 
 
+// ADDED COMMENTS!!!!
 // This class handles the inputs sent from the client.
 public class ClientThread implements Runnable{
 

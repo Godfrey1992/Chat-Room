@@ -14,6 +14,7 @@ import javax.swing.*;
 
 public class Server extends JFrame implements Runnable{
 
+	// ADDED SOME MORE COMMENETS
 	public static JFrame frame;
 	public static JLabel portLabel;
 	public static JTextField portField;

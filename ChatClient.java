@@ -19,6 +19,8 @@ import javax.swing.JTextField;
 
 public class ChatClient extends JFrame implements Runnable
 {
+
+    // MADE CHANGE on TEST BRACH
 	JTextField textField;
 	Socket socket;
 	String name;

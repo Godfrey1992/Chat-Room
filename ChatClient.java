@@ -20,6 +20,7 @@ import javax.swing.JTextField;
 public class ChatClient extends JFrame implements Runnable
 {
 
+    // change again
     // Made some more checges on new patch
     // MADE CHANGE on TEST BRACH
 	JTextField textField;
